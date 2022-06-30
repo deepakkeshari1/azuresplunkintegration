@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "event": {
+      "type": "string"
+    },
+    "fields": {
+      "type": "object",
+      "properties": {
+        "StatusCode": {
+          "type": "string"
+        },
+        "Url": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "StatusCode",
+        "Url",
+        "state",
+        "status"
+      ]
+    },
+    "sourcetype": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "event",
+    "fields",
+    "sourcetype"
+  ]
+}
